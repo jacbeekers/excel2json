@@ -6,7 +6,7 @@ from datetime import datetime
 
 from openpyxl.worksheet.cell_range import CellRange
 
-from utils import messages, excel
+from excelform2json.utils import messages, excel
 
 
 class Excel2JSON:
