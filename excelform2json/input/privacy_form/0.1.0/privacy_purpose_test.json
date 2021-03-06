@@ -1,0 +1,35 @@
+{
+  "meta": "privacy_purpose_test",
+  "meta_version": "0.1.0",
+  "version": "1.0.0",
+  "questions": [
+    {
+      "nr": "Question1",
+      "text": "Why?",
+      "explanation": "Why is this?",
+      "has_list": "False",
+      "answers": [
+        { "nr": "1",
+        "label":  "Is this the reason?",
+        "selected" :  "<provide your answer here"}
+      ]
+    },
+    {
+      "nr": "Question2",
+      "text": "Is it one of the following?",
+      "explanation": "Trying to figure out what it is",
+      "has_list": "True",
+      "answers": [
+        {"nr":  "Question2_Answer1",
+        "label":  "Option1",
+        "text": "Yes"},
+        {
+          "nr": "Question2_Answer2",
+          "label": "Option2",
+          "text": "No"
+        }
+      ],
+      "multi_valued": "False"
+    }
+  ]
+}

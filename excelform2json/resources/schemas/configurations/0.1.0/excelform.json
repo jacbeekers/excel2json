@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/jacbeekers/metadata-registry-interface-specifications/blob/master/metadata/schemas/configurations/0.1.0/excelform.json",
+  "title": "Configuration file structure for excel form component",
+  "description": "Configuration file structure for excel form component",
+  "required": [
+    "meta",
+    "meta_version",
+    "version"
+  ],
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "string",
+      "description": "metadata type",
+      "enum": [
+        "excelform2json_configuration"
+      ]
+    },
+    "meta_version": {
+      "type": "string",
+      "description": "the meta structure version for the object",
+      "pattern": "^([0-9]+).([0-9]+).*$"
+    },
+    "settings": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/setting"
+      },
+      "uniqueItems": true
+    }
+  },
+  "definitions": {
+    "setting": {
+      "type": "object",
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "description": "The property name.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The description of the property.",
+          "type": "string"
+        },
+        "value": {
+          "description": "The value of the property",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+
