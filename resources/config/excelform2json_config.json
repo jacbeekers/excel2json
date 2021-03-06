@@ -1,8 +1,9 @@
 {
   "meta": "excel2json_configuration",
   "meta_version": "0.1.0",
+  "version": "0.2.0",
   "excel_location": "input/excels",
-  "json_directory": "out/json",
+  "json_directory": "temp/json",
   "json_file_prefix_rename_this_if_you_want_a_timestamp": "TIMESTAMP",
   "json_file_prefix": "tryout",
   "log_directory": "log",

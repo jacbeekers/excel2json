@@ -18,7 +18,6 @@ pip3 install keyring
 echo "building"
 echo "=-=-=--=-==---=-=-=-=---=-=-=-=-=-=-=-"
 rm -rf dist/*
-cd excelform2json
 python3 setup.py sdist bdist_wheel
 rc=$?
 if [ $rc -eq 0 ] ; then
